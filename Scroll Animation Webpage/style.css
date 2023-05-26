@@ -1,0 +1,182 @@
+html{
+	/* Set height of the html page to 100% of the browser height */
+	height: 100%;
+	/* Hide horizontal scroll */
+	overflow-x: hidden;
+	font-family: 'Helvetica', sans-serif;
+}
+
+body{
+	/* Set height of the body to 100% -- separated out of html to allow scrollTo animation */
+	height: 100%;
+	margin: 0px;
+}
+
+/* 
+Navigation Bar 
+*/
+#nav{
+	/* Fix navigation bar at the top middle of the web page */
+    position: fixed;
+    /* calc() CSS function calculates numbers of different units */
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* Display nav bar on top of everything else */
+    z-index: 1;
+}
+
+.nav-btn{
+	width: 20px;
+    height: 20px;
+    /* Make square div into a circle */
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid black;
+    display: inline-block;
+    cursor: pointer;
+    /* transition changes in background-color */
+    transition: background-color 0.5s;
+}
+
+/* When a nav-btn is hovered on, set background-color to black */
+.nav-btn:hover{
+	background-color: black;
+}
+
+/* 
+Apple Div
+*/
+#apple-div{
+	/* Fix cat div in the bottom left corner of the web page */
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	width: 300px;
+	text-align: center;
+}
+
+#apple{
+	width: 300px;
+	margin-top: 18px;
+}
+
+/* Parallax */
+
+#title, #first-iphone,#third-iphone,#fourth-iphone,#fifth-iphone,#sixth-iphone,#seventh-iphone,#eighth-iphone,#tenth-iphone,#eleventh-iphone,#twelveth-iphone,#thirteenth-iphone,#fourteenth-iphone{
+	/* Set height of div to 100% */
+	height: 100%;
+	/* The bottom three background CSS settings create parallax effect */
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
+
+#title{
+	/* Set background image using url() function */
+	background-image: url('all.jpeg');
+}
+
+
+#first-iphone{
+	background-image: url('1bg.JPG');
+}
+
+#third-iphone{
+	background-image: url('3bg.JPG');
+}
+
+#fourth-iphone{
+	background-image: url('4bg.JPG');
+}
+
+#fifth-iphone{
+	background-image: url('5bg.JPG');
+}
+
+#sixth-iphone{
+	background-image: url('6bg.JPG');
+}
+
+#seventh-iphone{
+	background-image: url('7bg.JPG');
+}
+
+#eighth-iphone{
+	background-image: url('8bg.JPG');
+}
+
+#tenth-iphone{
+	background-image: url('10bg.JPG');
+}
+
+#eleventh-iphone{
+	background-image: url('11bg.JPG');
+}
+
+#twelveth-iphone{
+	background-image: url('12bg.JPG');
+}
+
+#thirteenth-iphone{
+	background-image: url('13bg.JPG');
+}
+
+#fourteenth-iphone{
+	background-image: url('14bg.JPG');
+}
+
+
+/* Title Text */
+#title-div{
+    width: 80%;
+    color: #fff;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+
+#title-text{
+	color: white;
+	font-size: 100px;
+}
+
+
+
+.iphone{
+	/* Center text in the middle of browser using flexbox */
+	height: 100%;
+	display: flex;
+	/* justify-content: center; */
+	align-items: center;
+	
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.first-col{
+    flex-basis: 48%;
+    padding: 60px 80px;
+}
+
+
+.first-col h1{
+    padding-top: 0;
+    font-size: 38px;
+    font-weight: 600;
+	color:#fff
+} 
+
+.first-col p{
+    padding: 15px 0 25px;
+    font-size: 18px;
+    font-weight: 300;
+	color:#fff
+}
