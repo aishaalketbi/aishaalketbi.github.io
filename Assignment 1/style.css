@@ -1,0 +1,583 @@
+html{
+	/* Set height of the html page to 100% of the browser height */
+	height: 100%;
+	/* Hide horizontal scroll */
+	overflow-x: hidden;
+	 font-family: 'Montserrat','Helvetica', sans-serif; 
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* HOME PAGE */
+.header{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/curtain.jpeg);
+    background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
+
+    /* NAVIGATION */
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 150px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition:    
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+    /* HEADER AND SLOGAN */
+.text-box{
+    width: 80%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff
+}
+ 
+.row{
+    margin-top: 0%;
+    display: flex;
+    justify-content: space-between;
+} 
+    /* PURPOSE */
+.purpose{
+    height: 100%;
+    width: 100%;
+    background-image: url(images/purpose.JPG);
+    background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
+ 
+.purpose-col{
+    /* Allows for two columns */
+    flex-basis: 48%; 
+    padding: 30px 2px;
+    margin-left: 5%;
+}
+
+.purpose-col img{
+    width: 100%;
+}
+
+.purpose-col h1{
+    padding-top: 20%;
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.purpose-col ul li{
+    padding: 15px 0 25px;
+    font-size: 18px;
+    font-weight: 300;
+} 
+
+    /* STEPS */
+.steps{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/steps.JPG);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+    
+}
+
+.steps-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+    margin-left: 55%;
+    
+}
+
+
+.steps-col h1{
+    padding-top: 20%;
+    font-size:38px;
+    font-weight: 600;
+}
+
+.steps-col ul li{
+    padding: 15px 0 25px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/* VIDEO PAGE */
+
+.vidheader{
+    height:50vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(images/vidbg.png);
+    background-position: center;
+    background-size: cover;
+    text-align:center;
+    color:#fff;
+    background-attachment: fixed;
+}
+
+.vid-text-box h1{
+    margin-top:100px;
+    margin-bottom: 0px;
+    font-size: 68px;
+}
+
+.vid-text-box p{
+    font-size: 18px;
+    color: #fff
+}
+
+.videos{
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
+
+
+    /* SEARCH BAR  */
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.search-bar{
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    max-height: 50px;
+    background: rgba(197,10,3, 0.2);
+    display:flex;
+    align-items:center;
+    border-radius:60px;
+    padding: 10px 20px;
+    backdrop-filter: blur(4px) saturate(180%);
+}
+
+.search-bar input{
+    background: transparent;
+    flex:1;
+    border:0;
+    outline:none;
+    padding: 24px 20px;
+    font-size: 16px;
+    color: rgba(197,10,3);
+}
+
+::placeholder{
+    color: rgba(197,10,3);
+}
+
+.search-bar button img{
+    width: 25px;  
+}
+
+.search-bar button{
+    border: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: rgba(197,10,3, 0.2);
+    cursor: pointer;
+}
+
+    /* PUTS FOUR IMAGES TOGETHER */
+.box{
+    position: relative;
+    width: 290px;
+    height: 290px;
+    background: #000;
+    margin: 10px;
+    box-sizing: border-box;
+    display:inline-block;
+    top:80px;
+    left:90px;
+}
+
+.img-box{
+    position: relative;
+    overflow: hidden;
+}
+
+    /* Hover over image */
+.img-box img{
+    max-width: 100%;
+    transition: transform 1s;
+    opacity: 0.6;
+    
+}
+
+.box:hover .img-box{
+    opacity: 1;
+}
+
+.text{
+    display:flex;
+    position:absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(197, 9, 3, 0.594);
+    transform: scaleY(0);
+    transition: transform 0.5s;
+    text-align: center;
+}
+
+    /* displays text over box */
+.box:hover .text{
+    transform: scaleY(1);
+}
+
+.content{
+    display:flex;
+    position: absolute;
+    top: 25%;
+    left:25%;
+    right:25%;
+    bottom:25%;
+    text-align: center;
+    padding: 15px;
+    color:#fff;
+}
+
+. content h1{
+    
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+
+
+/* D2 IN SUMMER PAGE */
+
+.D2-header{
+    height:50vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(images/d2d2.png);
+    background-position: center;
+    background-size: cover;
+    text-align:center;
+    color:#fff;
+    background-attachment: fixed;
+	
+    
+}
+
+.D2-header h1{
+    margin-top:100px;
+    font-size: 68px;
+}
+
+
+.D2-vid{
+    height: 100%;
+    width: 100%;    
+   
+}
+
+.vid{
+    width:800px;
+    height: 450px;
+    display: block;
+    margin-top:10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vid p{
+    text-align: center;
+    line-height: 24pt;
+    padding: 15px 0 25px;
+    font-size: 18px;
+    font-weight: 300;
+    background: #fff3f3;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top:10%;
+}
+.D2-creators{
+    width: 80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.D2-creators h1{
+ font-size: 36px;   
+ font-weight: 600;
+}
+
+.creators-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+.creators-col h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.reviews{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+    height: 500px;
+    background: #fff3f3;
+    /* allows the review section to be scrollable */
+    overflow-x: hidden;
+    overflow-y: auto;
+    
+}
+
+.review-header{
+    background: #fff3f3;
+    letter-spacing: 1px;
+    margin: 30px 0px;
+    padding: 10px 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-header h1{
+    font-size: 36px;
+    font-weight: 600;
+    padding: 10px 50px;
+}
+
+.review-container{
+    background: #fff3f3;
+    padding: 5px 60px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.review-box{
+    width: 500px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 15px;
+}
+
+.profile{
+    display:flex;
+    align-items: center;
+}
+
+.profile-img{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.profile-img img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.username{
+    display: flex;
+    flex-direction: column;
+}
+
+.username strong{
+    letter-spacing:0.5px;
+}
+
+.username span{
+    color: #979797;
+}
+
+.stars{
+    color: #f9d71c;
+}
+
+.box-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.comments p{
+    color: #4b4b4b
+}
+
+/* Allows content to fade in */
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/* Quick Tour page */
+.QT-header{
+    height:50vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(images/qtbg.png);
+    background-position: center;
+    background-size: cover;
+    text-align:center;
+    color:#fff;
+    background-attachment: fixed;
+	
+    
+}
+
+.QT-header h1{
+    margin-top:100px;
+    font-size: 68px;
+}
+
+/* Campus Life Page */
+.CL-header{
+    height:50vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(images/qtbg.png);
+    background-position: center;
+    background-size: cover;
+    text-align:center;
+    color:#fff;
+    background-attachment: fixed;
+	
+    
+}
+
+.CL-header h1{
+    margin-top:100px;
+    font-size: 68px;
+}
+
+/* After Campus Page */
+.AC-header{
+    height:50vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(images/qtbg.png);
+    background-position: center;
+    background-size: cover;
+    text-align:center;
+    color:#fff;
+    background-attachment: fixed;
+	
+    
+}
+
+.AC-header h1{
+    margin-top:100px;
+    font-size: 68px;
+}
+
+/* About Us Page */
+.Aboutheader{
+    height:50vh;
+    width:100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(images/nyuim.jpeg);
+    background-position: center;
+    background-size: cover;
+    text-align:center;
+    color:#fff;
+    background-attachment: fixed;
+}
+
+.Aboutheader h1{
+    margin-top:100px;
+    font-size: 68px;
+}
+
+.about-us{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+
+.about-col p{
+    font-size: 28px;
+    font-weight: 100;
+    line-height: 50pt;
+}
+.about-col img{
+    width: 100%;
+}

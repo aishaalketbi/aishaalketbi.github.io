@@ -1,0 +1,8 @@
+Project Name: 30MFF
+
+In this project, we were instructed to make a webpade to house and debut our 30MFFF that we made in class.
+I decided to create a website for 30MFF which displays the purposes of 30MFF, how to make a short video, and house the four different projects produced in class. I wanted to attempt to create a modern website which resembled teamwork (as that was a main part of making the video) as well as modernity. However, the main thing I wanted to do is create a pleasent and efficient expierence for users.
+
+Before even beginning to code, I created a wireframe and sketched out my ideas of how I wanted the website to look. After I completed this, I went on the internet and browsed videos on how I could reach the end goal I wanted to achieve. Following the video, I began to code and watched my vision slowly come to life. I began by only coding my html and css file. Regarding CSS, I wanted to create consistency throughout my webpage which is why the banner background are the same gradient and why there is a common theme of red. After finishing this, I moved on to the javascript file where I decided I wanted the elements on my page to fade in when I scroll. 
+
+Overall, I enjoyed making my first proper website. The parallaxx scrolling, fade in scroll animation, scrolling on the reviews section and the hover on the navigation bar all met my expectations and created a satisfying feeling. However, there are some rooms for improvement such as finding a better logo for the website and perhaps adding other features on D2 page as I feel like it looks bland. This also applies to the right hand side of the reviews section.
