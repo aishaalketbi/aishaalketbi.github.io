@@ -1,0 +1,23 @@
+html{
+	/* Set height of the html page to 100% of the browser height */
+	height: 100%;
+	font-family: 'Helvetica', sans-serif;
+}
+
+body{
+	margin: 0;
+    padding: 0;
+}
+
+.darktext{
+    text-align: center;
+    line-height: 24pt;
+    padding: 15px 0 25px;
+    font-size: 18px;
+    font-weight: 300;
+    background: #2785E2;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top:5%;
+}
+
