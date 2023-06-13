@@ -1,0 +1,441 @@
+html{
+	/* Set height of the html page to 100% of the browser height */
+	height: 100%;
+	/* Hide horizontal scroll */
+	overflow-x: hidden; 
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+    /* NAVIGATION */
+    
+nav{
+        display: flex;
+        /* padding: 2% 6%; */
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(0,0,0,0.4);
+}
+
+.cup{
+     position: fixed; 
+    top: 5%;
+        left: 5%; 
+        transform: translate(-50%,-50%); 
+        width: 25px;
+        height: 30px;
+        border: 6px solid #fff;
+        border-top: 2px solid transparent;
+        border-radius: 15px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+}
+
+.cup:before{
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 15px;
+        border: 6px solid #fff;
+        right: -25px;
+        top: 8%;
+        border-top-right-radius: 35px;
+        border-bottom-right-radius: 35px;
+}
+
+/* Water increases as user scrolls down the page */
+.water{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        overflow: hidden;
+        height: 0;
+        transition: height 0.5s ease;
+}
+
+.water .wave{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(images/water.png);
+        animation: animate 1s linear infinite;
+}
+
+/* Water moves */
+@keyframes animate{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 200px;
+    }
+}
+.nav-links{
+        flex: 1;
+        text-align: right;
+}
+    
+.nav-links ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 8px 12px;
+        position: relative;
+}
+    
+.nav-links ul li a{
+        color: #fff;
+        text-decoration: none;
+        font-size: 13px;
+}
+    
+.nav-links ul li::after{
+        content: '';
+        width: 0%;
+        height: 2px;
+        background:  rgb(93, 189, 202);;
+        display: block;
+        margin: auto;
+}
+    
+.nav-links ul li:hover::after{
+        width: 100%;
+}
+    
+.nav-scrolled {
+        color: red !important; /* Change the color as desired */
+}
+
+.nav-scrolled .nav-links ul li a {
+        color: red; /* Change the color as desired */
+}
+
+/* sticks the nav bar on the top of the page */
+.stick {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+}
+      
+
+/* Homepage */
+#homepage{
+    height: 100%;
+    width:100%;
+    background-color: rgba(0,0,0,0.4);
+    position: relative;   
+}
+
+/* parallax */
+#homepage video{ 
+    min-width: 100%;
+    position: fixed;
+    top:0;
+    z-index: -999;
+}
+
+
+.header{
+        width: 80%;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+
+.header h1{
+    font-size: 75px;
+}
+
+.header p{
+    margin: 10px 0 40px;
+    font-size: 30px;
+}
+
+
+
+.scroll-down{
+    height: 50px;
+    width: 30px;
+    border: 2px solid white;
+    position: absolute;
+    left:50%;
+    bottom:20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.scroll-down::before,
+.scroll-down::after{
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    border: 2px solid white;
+    height: 10px;
+    width: 10px;
+    transform: translate(-50%, -100%) rotate(45deg);
+    border-top:transparent;
+    border-left:transparent;
+    animation: scroll-down 1s ease-in-out infinite;
+}
+
+.scroll-down::after{
+    top: 30%;
+    animation-delay: 0.3s;
+}
+
+@keyframes scroll-down{
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+        top: 90%;
+    }
+}
+
+/* VIDEO PAGE */
+#video-page{
+    height: 100%;
+    width:100%;
+    background-color: rgba(232, 232, 232);
+    
+}
+
+.video-header{
+    padding-top: 60px;
+    color: #444;
+    font-size: 28px;
+    margin: auto;
+    line-height: 50px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+
+.video {
+
+    margin: 2% auto;
+    width: 800px;
+    height: 450px;
+}
+
+.video p{
+    text-align: center;
+line-height: 24pt;
+padding: 15px 0 25px;
+font-size: 18px;
+font-weight: 300;
+color: #444;
+background: rgb(93, 189, 202,0.7);
+border-radius: 10px;
+box-sizing: border-box;
+margin-top:2%;
+}
+
+/* Behind the Scenes */
+
+#gallery{
+    height: 100%;
+    width:100%;
+    background-color: rgb(93, 189, 202);  
+}
+
+.gallery-header{
+    padding-top: 60px;
+    padding-bottom: 20px;
+    color: #444;
+    font-size: 28px;
+    margin: auto;
+    line-height: 50px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photos{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 30px;    
+}
+
+.photos img{
+    width: 80%;
+    cursor: pointer;
+}
+
+.photos img:hover{
+    transform: scale(0.8) rotate(-15deg);
+    border-radius: 20px;
+    box-shadow: 0 32px 75px rgba(68,77,136,0.2);
+}
+
+.full-img{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.9);
+    position: fixed;
+    top:0;
+    left:0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.full-img img{
+    width: 90%;
+    max-width: 500px;
+}
+
+.full-img span{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.full-img span:hover{
+    color: #888; 
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 80px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1;
+    transition: color 0.3s;
+    
+  }
+  
+  .arrow-container {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    right: 20%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .arrow:hover {
+    color: #888;
+  }
+  
+  .arrow-left {
+    left: 10px;
+  }
+  
+  .arrow-right {
+    right: 10px;
+  }
+
+/* Creators Page */
+
+#creators{
+    height: 100%;
+    width:100%;
+    background: #f5f5f5;
+}
+.container{
+    text-align: center;
+    background: #f5f5f5;
+}
+
+.creators-header{
+    padding-top: 60px;
+    color: #444;
+    font-size: 28px;
+    margin: auto;
+    line-height: 50px;
+}
+
+.sub-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 48px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .teams {
+    margin: 10px;
+    padding: 22px;
+    max-width: 45%; 
+    flex-basis: 45%; 
+    transition: 0.4s;
+    box-sizing: border-box;
+  }
+
+.teams img {
+    width: 100px;
+    height: 100px;
+}
+
+.name{
+    padding: 12px;
+    font-weight: bold;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.year{
+    font-style: italic;
+    color: #888;
+}
+
+.about{
+    margin: 20px 0;
+    font-weight: lighter;
+    color: #4e4e4e;
+}
+
+/* Allows content to fade in */
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+  }
+  
+  .reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  
+  

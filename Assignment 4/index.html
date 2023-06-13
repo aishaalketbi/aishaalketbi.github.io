@@ -1,0 +1,127 @@
+<html>
+<!-- root of DOM -->
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <?xml version="1.0" encoding="UTF-8"?>
+    <title>Hunt For Water</title>
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+
+  <body>
+
+    
+
+     <!-- Homepage -->
+     <section id = "homepage">
+        <!-- Background Video -->
+        <video autoplay loop muted plays-inline class = "background-clip">
+            <source src = "videos/water1.mp4" type = "video/mp4">
+        </video>
+        <!-- Navigation Bar -->
+        <nav>
+            <div class = "cup">
+                <div class = "water" id = "water">
+                    <div class = "wave">
+        
+                    </div>
+                </div>
+            </div>
+            <div class="nav-links">
+              <ul>
+                <li><a href="#homepage">HOME</a></li>
+                <li><a href="#video-page">WATCH</a></li>
+                <li><a href="#gallery">GALLERY</a></li>
+                <li><a href="#creators">CREATORS</a></li>
+              </ul>
+            </div>
+          </nav>
+        <div class = "header">
+            <h1>Hunt For Water</h1>
+            <p>Heat. Thirst. Survival.</p>  
+        </div>
+        <a href="#video-page"><div class = "scroll-down"></div> </a>
+    </section>
+
+        <!-- Video Page -->
+    <section id = "video-page">
+        <div class = "reveal">
+        <div class = "video-header">
+            <!-- <h1>Video</h1> -->
+        </div>
+        
+        <div class = "video"> 
+            <video controls src ="videos/huntforwaterfilm.mp4" width = "100%" height = "100%"></video>
+            <p>Hunt For Water follows a young man who despertely needs to fulfill his thirst and get water. The young man is met with obstacles along the way before finally reaching the finish line</p>
+        </div>
+    </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id = "gallery">
+        <div class = "reveal">
+        <div class = "gallery-header">
+            <h1>Gallery</h1>
+        </div>
+        <div class = "full-img" id="fullImgBox">
+            <img src = "images/img1.png" id="fullImg">
+            <span onclick="closeFullImg()">X</span>
+            <div class="arrow-container">
+            <span class="arrow arrow-left" onclick="showPreviousImage()">&#8249;</span>
+            <span class="arrow arrow-right" onclick="showNextImage()">&#8250;</span>
+        </div>
+        </div>
+        <div class = "photos">
+            <img src = "images/img1.png" onclick="openFullImg(this.src)">
+            <img src = "images/img2.png" onclick="openFullImg(this.src)">
+            <img src = "images/img3.png" onclick="openFullImg(this.src)">
+            <img src = "images/img4.png" onclick="openFullImg(this.src)">
+            <img src = "images/img6.png" onclick="openFullImg(this.src)">
+            <img src = "images/img5.png" onclick="openFullImg(this.src)">
+            <img src = "images/img7.png" onclick="openFullImg(this.src)">
+            <img src = "images/img8.png" onclick="openFullImg(this.src)">
+        </div>
+        </div>
+    </section>
+
+    <!-- Creators Page -->
+
+    <section id = "creators">
+        <div class = "reveal">
+        <div class = "container">
+            <div class = "creators-header">
+                <h1>Creators</h1>
+            </div>
+            
+            <div class = "sub-container">
+            <div class = "teams">
+                <div class = "name">Aisha Alketbi</div>
+                <div class = "year">Sophmore</div>
+                <div class = "about">Aisha worked as a director, sound engineer and web developer capturing the sounds of nature as well as tying the different contents onto the website.</div>
+                
+            </div>
+            <div class = "teams">
+                <div class = "name">Kwaaku Boamah-Powers</div>
+                <div class = "year">Freshman</div>
+                <div class = "about">Kwaaku worked as an actor, director, and editor using his artistic abilities to perform both on and off the screen.</div>
+                
+            </div>
+            <div class = "teams">
+                <div class = "name">Sunny Sun</div>
+                <div class = "year">Sophmore</div>
+                <div class = "about">Sunny worked as a director and editor, using her film knoweldge to produce the final film. She also had a small acting role within the film.</div>
+                
+            </div>
+            <div class = "teams">
+                <div class = "name">Nourhane Sekkat</div>
+                <div class = "year">Sophmore</div>
+                <div class = "about">Nourhane worked as a director,editor and sound engineer using her creativity in the different roles to produce the final film. She also had a small acting role within the film.</div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <script src = "script.js"> </script>
+</body>
+</html>
