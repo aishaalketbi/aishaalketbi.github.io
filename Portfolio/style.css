@@ -16,6 +16,7 @@ body {
   background-color: #514c9c;
 }
 
+/* Navigation Bar */
 nav {
     display: flex;
     padding: 2% 6%;
@@ -168,6 +169,7 @@ img {
   width: 100%;
 }
 
+/* For Phone */
 @media (orientation: portrait){
     .banner{
         height: 95vh;
@@ -273,7 +275,7 @@ img {
     line-height: 22px;
   }
 
-  /* Media queries for iPhone */
+  /* For iPhone */
   @media only screen and (max-width: 480px) {
     .about-title-1 {
       font-size: 36px;
@@ -435,7 +437,7 @@ img {
     z-index: 2;
   }
 
-  /* Media queries for iPhone */
+  /* For iPhone */
   @media only screen and (max-width: 480px) {
     .skills-title-1 {
       font-size: 36px;
@@ -587,7 +589,7 @@ img {
     transform: scale(1.2);
   }
 
-  /* Media queries for iPhone */
+  /* For iPhone */
   @media only screen and (max-width: 480px) {
     .portfolio-container {
       padding: 20px;
@@ -897,7 +899,8 @@ img {
     transform: translate(181%, 11%);
     opacity: 0.2;
   }
-  
+
+/* For phone */
   @media (max-width: 850px) {
     .form {
       grid-template-columns: 1fr;
