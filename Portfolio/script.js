@@ -1,4 +1,4 @@
-
+// Parallax Scrolling
 let layer_1 = document.querySelector(".layer-1");
 let layer_2 = document.querySelector(".layer-2");
 let layer_3 = document.querySelector(".layer-3");
@@ -15,6 +15,7 @@ window.onscroll = function(){
     layer_5.style.transform = "translateY("+ Y/3 +"px)";
 }
 
+// Allows the user to type in 
 const inputs = document.querySelectorAll(".input");
 
 function focusFunc(){
