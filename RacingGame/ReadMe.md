@@ -6,3 +6,6 @@ You must have a menu with which to select between the different circuits and car
 The race will consist of 3 laps, and will only finish after the 3rd lap (The video demo only did 2 for the sake of time) (20points).
 Add a HUD where the player can see the current speed, lap number, or other details (10 points)
 Add sound or FX (10 points). It isn't finished as I'd like to add more circuits, more AI, and change the lookout of the game. I also want to add damage to the cars as well as a replay of the race.
+I used youtube videos to help me throughout the development of the game: 
+https://www.youtube.com/watch?v=ehDRTdRGd1w&list=PLZ1b66Z1KFKjzVAiQNAVx3O6IH2CUHCJo
+https://www.youtube.com/watch?v=CC8j_fU2GTQ&pp=ygUdaHVkIHNwZWVkb21ldGVyIGZvciBjYXIgdW5pdHk%3D
